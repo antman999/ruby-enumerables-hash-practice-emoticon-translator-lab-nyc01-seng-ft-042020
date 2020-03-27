@@ -7,7 +7,7 @@ def load_library(file)
   lo.each do |value, key|
     hash[:get_meaning][key[0]] = hash[value][1]
     
-    hash[:get_emoticon][key[0]] = key[1]
+    hash[:get_emoticon][key[1]] = value[1]
   end
 hash
 end
